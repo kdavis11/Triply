@@ -1,0 +1,23 @@
+Country,country_code,latitude,longitude,Continent,Popular Destination,Activity Type,Best Season,Avg Cost (USD/day),Avg Rating,Annual Visitors (M),UNESCO Site,Travel Records,Average Trip Duration (days),Average Traveler Age,Traveler Nationalities,Accommodation Types,Average Accommodation Cost,Transportation Types,Average Transportation Cost
+Argentina,AR,-38.42,-63.62,South America,Crystal Park,Religious,Summer,162.47,5.0,9.65,No,,,,,,,,
+Australia,AU,-25.27,133.78,Oceania,Golden Temple,Historical,Winter,194.77,4.3,9.97,Yes,,,,,,,,
+Brazil,BR,-14.24,-51.93,South America,Hidden Valley,Religious,Winter,154.16,4.4,9.96,No,5.0,8.2,31.0,Australian; Brazilian,Airbnb; Hostel; Hotel,1110.0,Bus; Car; Flight; Plane; Train,700.0
+Canada,CA,56.13,-106.35,North America,Sacred Canyon,Historical,Autumn,124.18,4.4,9.77,No,3.0,6.67,30.33,Australian; Canadian; Korean,Airbnb; Hostel; Hotel,1916.67,Airplane; Bus; Train,1075.0
+China,CN,35.86,104.2,Asia,Hidden Pagoda,Nature,Autumn,187.21,4.4,9.94,No,,,,,,,,
+Egypt,EG,26.82,30.8,Africa,Hidden Canyon,Religious,Winter,30.0,4.4,9.94,Yes,1.0,7.0,37.0,Canadian,Hotel,700.0,Train,100.0
+France,FR,46.23,2.21,Europe,Hidden Plaza,Religious,Autumn,75.05,4.5,9.69,No,8.0,7.0,34.88,American; British; Canadian; Korean,Airbnb; Hostel; Hotel,1614.29,Airplane; Car rental; Flight; Plane; Train,814.29
+Germany,DE,51.17,10.45,Europe,Golden Falls,City,Spring,149.7,4.8,9.93,No,1.0,9.0,48.0,German,Hotel,1400.0,Flight,700.0
+Greece,GR,39.07,21.82,Europe,Hidden Ruins,City,Summer,194.83,4.0,9.96,No,2.0,9.0,27.5,American; Korean,Airbnb,550.0,Plane,750.0
+India,IN,20.59,78.96,Asia,Crystal Park,Nature,Spring,64.95,4.4,9.97,No,,,,,,,,
+Italy,IT,41.87,12.57,Europe,Grand Valley,Religious,Summer,82.52,4.4,9.78,No,5.0,7.0,37.0,American; Italian; Korean,Airbnb; Hostel; Hotel,1196.0,Train,530.0
+Japan,JP,36.2,138.25,Asia,Sacred Temple,City,Winter,116.21,4.0,9.99,No,8.0,8.12,27.75,American; British; Chinese; Korean; Vietnamese,Airbnb; Hostel; Hotel,1671.43,Bus; Plane; Train,657.14
+Kenya,KE,-0.02,37.91,Africa,Ancient Plaza,Beach,Spring,173.98,4.6,9.97,Yes,,,,,,,,
+Mexico,MX,23.63,-102.55,North America,Grand Falls,Historical,Summer,189.59,4.3,9.99,No,5.0,7.8,39.4,American; British; Mexican,Airbnb; Hotel; Resort,1250.0,Flight; Plane,675.0
+Morocco,MA,31.79,-7.09,Africa,Hidden Valley,Adventure,Winter,225.67,4.7,9.98,Yes,1.0,7.0,26.0,Moroccan,Riad,600.0,Flight,400.0
+New Zealand,NZ,-40.9,174.89,Oceania,Golden Plaza,Religious,Spring,100.52,4.5,9.86,Yes,1.0,7.0,39.0,New Zealander,Hotel,7000.0,Train,2500.0
+Peru,PE,-9.19,-75.02,South America,Crystal Park,Nature,Spring,190.89,4.1,9.82,Yes,,,,,,,,
+South Africa,ZA,-30.56,22.94,Africa,Ancient Forest,Beach,Summer,103.34,4.7,9.97,No,3.0,8.33,34.33,Greece; South African,Airbnb; Guesthouse; Hostel,2000.0,Car; Ferry,1075.0
+Spain,ES,40.46,-3.75,Europe,Crystal Falls,Religious,Summer,150.78,4.3,9.97,No,5.0,7.4,28.8,Korean; Spanish,Airbnb; Hostel; Hotel,1800.0,Airplane; Car rental; Plane; Train,770.0
+Thailand,TH,15.87,100.99,Asia,Sacred Park,Religious,Spring,137.29,4.3,9.82,Yes,7.0,6.71,31.14,British; Canadian; Chinese; Indian; Korean,Airbnb; Hostel; Hotel; Resort,780.0,Bus; Flight; Plane; Train,350.0
+USA,US,37.09,-95.71,North America,Grand Pagoda,Nature,Winter,266.9,4.4,9.49,Yes,14.0,8.57,32.64,American; Australian; British; Canadian; Chinese; South Korean,Airbnb; Hostel; Hotel,2083.33,Airplane; Car rental; Flight; Plane; Train,1012.5
+Vietnam,VN,14.06,108.28,Asia,Serene Ruins,Beach,Summer,162.97,4.6,10.0,No,,,,,,,,
