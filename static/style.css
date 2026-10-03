@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 18px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.importance-questions {
+    max-width: 760px;
+    margin: 32px auto 48px;
+}
+
+.importance-questions fieldset {
+    margin: 0 0 16px;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.importance-questions legend {
+    padding: 0 6px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.importance-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 18px;
+}
+
+.importance-options label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 16px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+#map {
+    height: 500px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    border-radius: 10px;
+}

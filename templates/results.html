@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Your Vacation Recommendations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+</head>
+
+<body>
+
+    <h1>Your Vacation Recommendations</h1>
+
+    <div class="recommendations">
+        {% for recommendation in recommendations %}
+
+        <div class="recommendation">
+            <h2>{{ recommendation["Country Name"] }}</h2>
+            <p>Popular Attraction: {{ recommendation["Most Popular Attraction"] }}</p>
+            <p>Trip Type: {{ recommendation["Trip Type"] }}</p>
+            <p>Best Season: {{ recommendation["Best Season to Visit"] }}</p>
+            <p>Average Trip Cost Level: {{ recommendation["Avg Trip Cost (1-5)"] }}</p>
+            <p>Average Temperature: {{ recommendation["Avg Temp During Best Season (°C)"] }} °C</p>
+            <p>Recommendation Match: {{ "%.0f"|format(recommendation["Recommendation %"]) }}%</p>
+        </div>
+
+        {% endfor %}
+    </div>
+
+    <h2>Explore Your Top Matches</h2>
+
+    <p>Click a marker to learn more about each destination.</p>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+
+    var map = L.map("map").setView([20, 0], 2);
+
+    L.tileLayer(
+        "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        {
+            attribution: "&copy; OpenStreetMap contributors"
+        }
+    ).addTo(map);
+
+    
+    {% for country in recommendations %}
+
+        L.marker([
+            {{ country["Latitude"] }},
+            {{ country["Longitude"] }}
+        ])
+        .addTo(map)
+        .bindPopup(
+            "<b>{{ country['Country Name'] }}</b><br>" +
+            "Match: {{ country['Recommendation %']|round }}%<br>" +
+            "Attraction: {{ country['Most Popular Attraction'] }}<br>" +
+            "Best Season: {{ country['Best Season to Visit'] }}"
+        );
+
+    {% endfor %}
+
+</script>
+
+    <a href="{{ url_for('preferences') }}">Change preferences</a>
+
+</body>
+
+</html>
