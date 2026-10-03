@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Triply</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <h1>Tell Us About Your Trip</h1>
+
+    <p>Choose your vacation preferences below.</p>
+
+    <form method="post" action="{{ url_for('recommendations') }}">
+
+    <h2>Trip Type</h2>
+
+    <select name="trip_type" required>
+        {% for trip_type in trip_types %}
+            <option>{{ trip_type }}</option>
+        {% endfor %}
+    </select>
+
+
+    <h2>Budget</h2>
+
+    <select name="budget_preference" required>
+        <option value="1">Very Low</option>
+        <option value="2">Low</option>
+        <option value="3">Moderate</option>
+        <option value="4">High</option>
+    </select>
+
+
+    <h2>Temperature</h2>
+
+    <select name="temperature_preference" required>
+        <option value="1">Cold</option>
+        <option value="2">Mild</option>
+        <option value="3">Warm</option>
+        <option value="4">Hot</option>
+    </select>
+
+    <div class="importance-questions">
+        <fieldset>
+            <legend>How important is budget?</legend>
+            <div class="importance-options">
+                <label><input type="radio" name="budget_importance" value="1" required> 1  Not Important</label>
+                <label><input type="radio" name="budget_importance" value="2"> 2  Slightly Important</label>
+                <label><input type="radio" name="budget_importance" value="3"> 3  Moderately Important</label>
+                <label><input type="radio" name="budget_importance" value="4"> 4  Very Important</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>How important is trip type?</legend>
+            <div class="importance-options">
+                <label><input type="radio" name="trip_type_importance" value="1" required> 1  Not Important</label>
+                <label><input type="radio" name="trip_type_importance" value="2"> 2  Slightly Important</label>
+                <label><input type="radio" name="trip_type_importance" value="3"> 3  Moderately Important</label>
+                <label><input type="radio" name="trip_type_importance" value="4"> 4  Very Important</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>How important is weather</legend>
+            <div class="importance-options">
+                <label><input type="radio" name="temperature_importance" value="1" required> 1  Not Important</label>
+                <label><input type="radio" name="temperature_importance" value="2"> 2  Slightly Important</label>
+                <label><input type="radio" name="temperature_importance" value="3"> 3  Moderately Important</label>
+                <label><input type="radio" name="temperature_importance" value="4"> 4  Very Important</label>
+            </div>
+        </fieldset>
+    </div>
+
+    <button type="submit">Get Recommendations</button>
+    </form>
+
+</body>
+
+</html>
